@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Na frase temos uma <B>parte em negrito</B> usando a tag B (não semântica)</p>
+    <p>Na frase temos uma <strong>parte em negrito</strong> usando a tag strong (com semântica)</p>
+
+    <h2>Itálico/Ênfase</h2>
+    <p>Nesta frase vamos entrar com uma palavra em <i>itálico</i> usando a tag i (não semântica)</p>
+    <p>Nesta frase vamos entrar com uma palavra em <EM>itálico</EM> usando a tag EM (com semântica)</p>
+
+    <h2>Texto Marcador</h2>
+    <p>Aqui vamos usar um texto com destaque <mark style="background:green">de marcador de texto</mark> usando mark</p>
+    <p>Aqui vamos usar um texto com destaque <mark>de marcador de texto</mark> usando mark</p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos trabalhando com um <big>texto grande</big> e um <small>texto pequeno</small> nesta frase</p>
+
+    <h2>Texto deletado</h2>
+    <p>Neste paragráfo vamos trabalhar com um texto <del>que foi excluido</del> da frase (forma semântica)</p>
+
+    <h2>Texto inserido</h2>
+    <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de forma semântica</p>
+    <p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma não semântica</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Vamos demonstrar uma formula da equação do segundo grau ax<sup>2</sup> + bx + c = 0 usando a tag sup</p>
+
+    <h2>Texto subescrito</h2>
+    <p>Vamos demonstrar o texto subescrito com a formula H<sub>2</sub>O</p>
+
+    <h2>Trecho de código fonte</h2>
+    <p>Neste exemplo vou demonstrar um trecho de código</p>
+    <p>Inserindo um longo código em python:</p>
+    <pre>
+        <code>
+          import pandas as pd
+
+def remove_outlier(df, column_name):
+    # Calcular o primeiro e terceiro quartil (Q1 e Q3)
+    Q1 = df[column_name].quantile(0.25)
+    Q3 = df[column_name].quantile(0.75)
+    
+    # Calcular o intervalo interquartílico (IQR)
+    IQR = Q3 - Q1
+    
+    # Definir os limites inferior e superior para os dados aceitáveis
+    lower_limit = Q1 - 1.5 * IQR
+    upper_limit = Q3 + 1.5 * IQR
+    
+    # Filtrar os dados para remover os outliers
+    df_filtered = df[(df[column_name] >= lower_limit) & (df[column_name] <= upper_limit)]
+    
+    return df_filtered
+
+# Exemplo de uso
+# Suponha que você tenha um DataFrame df com uma coluna 'coluna_de_interesse'
+# df_filtered = remove_outlier(df, 'coluna_de_interesse')
+</code>
+</pre>
+
+<h2>Citações (quotation) simples</h2>
+<p>segundo Steve Jobs <q>A tecnologia move o mundo</q></p>
+
+<h2>Citações completas (livros)</h2>
+<p>Segundo Sandre Kumossunoki no seu livro A dança e o ventre:</p>
+<p> <blockquote>Dados existentes sobre intervenções cirúrgicas nos corpos..</blockquote> </p>
+
+<h2>Abreviações</h2>
+<p>Estamos estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> </p>
+
+<h2>Texto Invertivo</h2>
+<p>Estou estudando HTML</p>
+<p><bdo dir="rtl">Estou estudando HTML</bdo> </p>
+
+</body>
+</html>
