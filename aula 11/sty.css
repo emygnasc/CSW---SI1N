@@ -1,0 +1,21 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: rgb(255, 55, 222);
+    background-color: rgb(180, 255, 151);
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+    background-color: rgb(225, 161, 255);
+}
+
+h2 {
+    color: rgb(85, 67, 252);
+}
+
+p {
+    color: rgb(164, 29, 190);
+    font-size: small;
+}
