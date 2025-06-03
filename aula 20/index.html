@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loops - JavaScript</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <body>
+        <main class="main-section">
+    
+            <div class="container">
+                <div id="nascimento" class="logo">
+                    <h1>Calculadora de Idade</h1>
+                </div>
+            </div>
+    
+            <div>
+                <span>Data de Nascimento:</span>
+                <input class="dia" id="dia" type="number" max="31">
+                <select class="mes" name="mes" id="mes">
+                    <option value="01">Janeiro</option>
+                    <option value="02">Fevereiro</option>
+                    <option value="03">Março</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Maio</option>
+                    <option value="06">Junho</option>
+                    <option value="07">Julho</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+                <input class="ano" id="ano" type="number">
+            </div>
 
-
-<div id="Carro">
-
-</div>
-
-
-
-
+            <button class="botao" onclick="calculaidade()">Calcula Idade</button>
+            
+            <div>
+                <label onmouseover="calculaidade()" id="resultado">Idade</label>
+                <br>
+                <br>
+                <br>
+            </div>
+            <hr>
+            <div>
+                <div class="container">
+                    <div id="calculadora" class="logo">
+                        <h1>Calculadora</h1>
+                    </div>
+                </div>
+                <div>
+                    <input type="number" name="" id="n1">
+    
+                    <select class="mes" name="operacao" id="operacao">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                    <input type="number" name="" id="n2"> <br>
+                    <button class="botao" onclick="Calcular()">Calcula</button>
+                    <div>
+                        <label onmouseover="Calcular()" id="resultadocalc">Idade</label>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
     <script src="script.js"></script>
-    <script src="script2.js"></script>
 </body>
+
 </html>
